@@ -71,3 +71,15 @@ Here are the steps to install ArgoCD and retrieve the admin password:
    ```
 
 These commands will install ArgoCD into the specified namespace, set up the service as a LoadBalancer, and retrieve the admin password for you to access the ArgoCD UI.
+
+5.**Install Argo CD CLI**:
+```bash
+sudo curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
+```
+```bash
+sudo chmod +x /usr/local/bin/argocd
+```
+```bash
+argocd login <application URL>
+```
+it asking username and password.
