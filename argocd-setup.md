@@ -83,3 +83,10 @@ sudo chmod +x /usr/local/bin/argocd
 argocd login <application URL>
 ```
 it asking username and password.
+
+6. **AWS CLI INSTALL IN UBUNTU MACHINE**.
+   ```sudo apt install curl unzip
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
+   aws --version ```
